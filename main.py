@@ -16,10 +16,10 @@
 # Напишите программу для определения общего количества различных слов в строке текста.
 
 # s = input().lower().split()
-# print(s)
-# for i in range (len(s)):
-#     s[i]=s[i].strip('.,;:-?!')
-# print(s)
-# set_words= set(s)
-# print(s)
-# print(len(set_words))
+# # print(s)
+# # for i in range (len(s)):
+# #     s[i]=s[i].strip('.,;:-?!')
+# # print(s)
+# # set_words= set(s)
+# # print(s)
+# # print(len(set_words
