@@ -97,3 +97,17 @@
 #     zero_element.intersection_update(list_of_digits[i])
 #
 # print(*sorted(zero_element))
+
+# Подмножества и надмножества
+
+# set1 <= set2
+# set1.issubset(set2)
+# Возвращает True, если set1 является подмножеством set2
+# set1 >= set2
+# set1.issuperset(set2)
+# Возвращает True, если set1 является надмножеством set2
+# set1 < set2
+# Эквивалентно set1 <= set2 and set1 != set2 (строгое подмножество)
+# set1 > set2
+# Эквивалентно set1 >= set2 and set1 != set2 (строгое надмножество)
+
