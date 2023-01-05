@@ -89,11 +89,11 @@
 # На вход программе подается натуральное число nn, а затем nn различных натуральных чисел, каждое на отдельной строке.
 # Напишите программу, которая выводит все общие цифры в порядке возрастания у всех введенных чисел.
 
-n = int(input())
-list_of_digits =[set(input()) for _ in range(n)]
-zero_element = list_of_digits[0]
-
-for i in range(1,len(list_of_digits)):
-    zero_element.intersection_update(list_of_digits[i])
-
-print(*sorted(zero_element))
+# n = int(input())
+# list_of_digits =[set(input()) for _ in range(n)]
+# zero_element = list_of_digits[0]
+#
+# for i in range(1,len(list_of_digits)):
+#     zero_element.intersection_update(list_of_digits[i])
+#
+# print(*sorted(zero_element))
