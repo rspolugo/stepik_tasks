@@ -48,7 +48,7 @@
 # На вход программе подаются две строки текста, содержащие числа.
 # Напишите программу, которая выводит все числа в порядке возрастания, которые есть как в первой строке, так и во второй.
 
-x = set(int(i) for i in input().split(' '))
-y = set(int(i) for i in input().split(' '))
-z = x&y
-print(*sorted(z))
+# x = set(int(i) for i in input().split(' '))
+# y = set(int(i) for i in input().split(' '))
+# z = x&y
+# print(*sorted(z))
