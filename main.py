@@ -157,3 +157,14 @@
 # three = set(int(i) for i in input().split(' '))
 #
 # print(*sorted(three-(one|two), reverse=True))
+
+# Даны по 10-балльной шкале оценки по биологии трех учеников.
+# Напишите программу, которая выводит множество оценок,
+# не встречающихся ни у одного из трех учеников.
+
+# one = set(int(i) for i in input().split(' '))
+# two = set(int(i) for i in input().split(' '))
+# three = set(int(i) for i in input().split(' '))
+#
+# four = set(int(i) for i in range(11))
+# print(*sorted(four-(one|two|three)))
