@@ -142,8 +142,8 @@
 # Даны по 10-балльной шкале оценки по математике трех учеников.
 # Напишите программу, которая выводит множество оценок, имеющихся у учеников, которые встречаются не более, чем у двух из указанных учеников.
 
-one = set(int(i) for i in input().split(' '))
-two = set(int(i) for i in input().split(' '))
-three = set(int(i) for i in input().split(' '))
-
-print(*sorted((one|two|three)-(one&two&three)))
+# one = set(int(i) for i in input().split(' '))
+# two = set(int(i) for i in input().split(' '))
+# three = set(int(i) for i in input().split(' '))
+#
+# print(*sorted((one|two|three)-(one&two&three)))
