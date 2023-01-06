@@ -147,3 +147,13 @@
 # three = set(int(i) for i in input().split(' '))
 #
 # print(*sorted((one|two|three)-(one&two&three)))
+
+# Даны по 10-балльной шкале оценки по физике трех учеников.
+# Напишите программу, которая выводит множество оценок третьего ученика,
+# которые не встречаются ни у первого, ни у второго ученика.
+
+# one = set(int(i) for i in input().split(' '))
+# two = set(int(i) for i in input().split(' '))
+# three = set(int(i) for i in input().split(' '))
+#
+# print(*sorted(three-(one|two), reverse=True))
