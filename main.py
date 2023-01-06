@@ -132,9 +132,9 @@
 # Даны по 10-балльной шкале оценки по информатике трех учеников.
 # Напишите программу, которая выводит множество оценок, которые есть и у первого и у второго учеников, но которых нет у третьего ученика
 
-x = set(int(i) for i in input().split(' '))
-y = set(int(i) for i in input().split(' '))
-z = set(int(i) for i in input().split(' '))
-
-cross_xy = (x&y)-z
-print(*sorted(cross_xy, reverse=True))
+# x = set(int(i) for i in input().split(' '))
+# y = set(int(i) for i in input().split(' '))
+# z = set(int(i) for i in input().split(' '))
+#
+# cross_xy = (x&y)-z
+# print(*sorted(cross_xy, reverse=True))
