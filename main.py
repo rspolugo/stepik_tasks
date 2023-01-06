@@ -123,8 +123,18 @@
 # Напишите программу, которая определяет, входят ли в запись первого числа все цифры,
 # содержащиеся в записи второго (независимо от повтора, то есть количества цифр) числа или нет.
 
-n, m = set(input()), set(input())
-if n.issubset(m) == True:
-    print('NO')
-else:
-    print('YES')
+# n, m = set(input()), set(input())
+# if n.issubset(m) == True:
+#     print('NO')
+# else:
+#     print('YES')
+
+# Даны по 10-балльной шкале оценки по информатике трех учеников.
+# Напишите программу, которая выводит множество оценок, которые есть и у первого и у второго учеников, но которых нет у третьего ученика
+
+x = set(int(i) for i in input().split(' '))
+y = set(int(i) for i in input().split(' '))
+z = set(int(i) for i in input().split(' '))
+
+cross_xy = (x&y)-z
+print(*sorted(cross_xy, reverse=True))
