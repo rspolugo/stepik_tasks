@@ -416,4 +416,28 @@
 # result2=dict(zip([i for i in range(1,16)], [i**2 for i in range(1,16)]))
 # print(result2)
 
+# Дополните приведенный код так, чтобы в переменной result хранился словарь,
+# в котором для каждого символа строки text будет подсчитано количество его вхождений.
 
+# text = 'footballcyberpunkextraterritorialityconversationalistblockophthalmoscopicinterdependencemamauserfff'
+# list = list(text)
+# result = {}
+# for letter in list:
+#     result[letter]=result.get(letter, 0)+1
+# print(result)
+
+# Дополните приведенный код, чтобы он вывел наиболее часто встречающееся слово строки s.
+# Если таких слов несколько,
+# должно быть выведено то, что меньше в лексикографическом порядке.
+
+s = 'orange strawberry barley gooseberry apple apricot barley currant orange melon pomegranate banana banana orange barley apricot plum grapefruit banana quince strawberry barley grapefruit banana grapes melon strawberry apricot currant currant gooseberry raspberry apricot currant orange lime quince grapefruit barley banana melon pomegranate barley banana orange barley apricot plum banana quince lime grapefruit strawberry gooseberry apple barley apricot currant orange melon pomegranate banana banana orange apricot barley plum banana grapefruit banana quince currant orange melon pomegranate barley plum banana quince barley lime grapefruit pomegranate barley'
+result = {}
+words=s.split()
+tmp=[]
+for word in words:
+    result[word]= result.get(word, 0)+1
+for key, value in result.items():
+    tmptuple=(value, key)
+    tmp.append(tmptuple)
+tmp=sorted(tmp, reverse=True)
+print(tmp)
