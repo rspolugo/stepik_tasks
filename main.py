@@ -432,12 +432,14 @@
 
 s = 'orange strawberry barley gooseberry apple apricot barley currant orange melon pomegranate banana banana orange barley apricot plum grapefruit banana quince strawberry barley grapefruit banana grapes melon strawberry apricot currant currant gooseberry raspberry apricot currant orange lime quince grapefruit barley banana melon pomegranate barley banana orange barley apricot plum banana quince lime grapefruit strawberry gooseberry apple barley apricot currant orange melon pomegranate banana banana orange apricot barley plum banana grapefruit banana quince currant orange melon pomegranate barley plum banana quince barley lime grapefruit pomegranate barley'
 result = {}
-words=s.split()
-tmp=[]
-for word in words:
-    result[word]= result.get(word, 0)+1
-for key, value in result.items():
-    tmptuple=(value, key)
-    tmp.append(tmptuple)
-tmp=sorted(tmp, reverse=True)
-print(tmp)
+max = 0
+for i in s.split():
+    result[i] = result.get(i, 0) + 1
+    if result[i] > max:
+        max = result[i]
+l = list()
+for i in result:
+    if max == result[i]:
+        l.append(i)
+l.sort()
+print(l[0])
