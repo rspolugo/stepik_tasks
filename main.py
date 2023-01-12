@@ -489,3 +489,10 @@
 #         print(f'{i}_{d[i]}', end=' ')
 #     else:
 #         print(i, end=' ')
+info = {'emp1': {'name': 'Timur', 'job': 'Teacher'},
+        'emp2': {'name': 'Ruslan', 'job': 'Developer'},
+        'emp3': {'name': 'Rustam', 'job': 'Tester'}}
+for i in info:
+    print(i)
+    for j in info[i]:
+        print(j + ':', info[i][j])
