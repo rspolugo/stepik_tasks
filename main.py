@@ -527,3 +527,26 @@
 # months = {1: 'January', 2: 'February', 3: 'March', 4: 'April', 5: 'May', 6: 'June', 7: 'July', 8: 'August', 9: 'September', 10: 'October', 11: 'November', 12: 'December'}
 # result = {v: k for k, v in months.items()}
 # print(result)
+
+# В переменной s хранится строка пар число:слово. Дополните приведенный код, используя генератор, чтобы получить словарь result , в котором числа будут ключами, а слова – значениями.
+
+# s = '1:men 2:kind 90:number 0:sun 34:book 56:mountain 87:wood 54:car 3:island 88:power 7:box 17:star 101:ice'
+# spl=s.split(' ')
+# list=[]
+# numbers=[]
+# letters=[]
+# for i in spl:
+#     list.append(i.split(':'))
+# for j in range(len(list)):
+#     numbers.append(list[j][0])
+#     letters.append(list[j][1])
+#
+# temp = dict(zip(numbers, letters))
+#
+# result={int(k): v for k, v in temp.items()}
+#
+# print(result)
+
+# or
+
+# result = {int(k):v for k, v in [l.split(':') for l in s.split()]}
