@@ -559,3 +559,11 @@
 # result={num: [dev for dev in range(1, num+1) if num % dev == 0] for num in numbers}
 # print(result)
 
+# Дополните приведенный код, используя генератор, так, чтобы получить словарь result , в котором ключом будет строка – элемент списка words,
+# а значением – список соответствующих кодов ASCII символов данной строки
+
+# words = ['hello', 'bye', 'yes', 'no', 'python', 'apple', 'maybe', 'stepik', 'beegeek']
+#
+#
+# result = {k:[ord(i) for i in k] for k in words}
+# print(result)
