@@ -624,3 +624,18 @@
 # # or
 #
 # print(*[random.randint(1,6) for _ in range(int(input()))], sep='\n')
+
+# Напишите программу, которая с помощью модуля random генерирует случайный пароль.
+# Программа принимает на вход длину пароля и выводит случайный пароль, содержащий только символы английского алфавита a..z, A..Z (в нижнем и верхнем регистре). 65 -90 97 -122
+
+# import random
+# length = int(input())
+# list=[]
+# for i in range(length):
+#     c=random.randint(0, 1)
+#     if c==0:
+#         x=random.randint(65, 90)
+#     else:
+#         x=random.randint(97, 122)
+#     list.append(chr(x))
+# print(*list, sep='')
