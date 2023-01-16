@@ -600,3 +600,16 @@
 # student_grades = [86, 98, 89, 92, 45, 67, 89, 90, 100, 98, 10, 96, 93]
 # result = [{a: {b: c}} for a, b, c in zip(student_ids, student_names, student_grades)]
 # print(result)
+
+# Напишите программу, которая с помощью модуля random моделирует броски монеты.
+# Программа принимает на вход количество попыток и выводит результаты бросков: Орел или Решка (каждое на отдельной строке)
+
+# import random
+# n = int(input())
+# for i in range(n):
+#     num = random.randrange(0, 2)
+#     if num == 0:
+#         print("Орел")
+#     else:
+#         print("Решка")
+
