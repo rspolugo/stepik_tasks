@@ -1,4 +1,6 @@
 # 8.5 Напишите программу для вывода количества уникальных символов каждого считанного слова без учета регистра.
+import random
+
 
 # x = int(input())
 # for i in range(x):
@@ -652,6 +654,7 @@
 
 # IP адрес состоит из четырех чисел из диапазона от
 # 0 до 255 (включительно) разделенных точкой.
+
 # Напишите функцию generate_ip(), которая с помощью модуля random  генерирует и возвращает случайный корректный IP адрес.
 
 # import random
@@ -662,3 +665,19 @@
 #         d=random.randint(1,255)
 #         return (f'{a}.{b}.{c}.{d}')
 # generate_ip()
+
+# Почтовый индекс в Латверии имеет вид: LetterLetterNumber_NumberLetterLetter, где Letter – заглавная буква английского алфавита, Number – число от
+# 0 до 99 (включительно). Напишите функцию generate_index(), которая с помощью модуля random генерирует и возвращает случайный корректный почтовый индекс Латверии.
+# import random
+# def generate_index():
+#     return (f'{chr(random.randint(65, 90))}{chr(random.randint(65, 90))}{random.randint(0, 99)}_{random.randint(0, 99)}{chr(random.randint(65, 90))}{chr(random.randint(65, 90))}')
+# generate_index()
+#
+# # or
+# from random import choices
+# from string import ascii_uppercase
+#
+# def generate_index():
+#     n1, n2 = choices([i for i in range(0, 100)], k=2)
+#     a, b, c, d = choices(ascii_uppercase, k=4)
+#     return (f'{a}{b}{n1}_{n2}{c}{d}'
