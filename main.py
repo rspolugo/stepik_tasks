@@ -649,3 +649,16 @@
 # while len(empty_set)<7:
 #     empty_set.add(random.randint(1,49))
 # print(*sorted(empty_set))
+
+# IP адрес состоит из четырех чисел из диапазона от
+# 0 до 255 (включительно) разделенных точкой.
+# Напишите функцию generate_ip(), которая с помощью модуля random  генерирует и возвращает случайный корректный IP адрес.
+
+# import random
+# def generate_ip():
+#         a=random.randint(1,255)
+#         b=random.randint(1,255)
+#         c=random.randint(1,255)
+#         d=random.randint(1,255)
+#         return (f'{a}.{b}.{c}.{d}')
+# generate_ip()
